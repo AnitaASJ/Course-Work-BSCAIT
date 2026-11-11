@@ -1,0 +1,452 @@
+@import url('https://fonts.googleapis.com/css2?family=Miniver&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #ffffff;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+}
+
+header{
+    background-color: rgb(0,0,150);
+    padding: 15px 40px;
+    width: 100%;
+    margin: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+     border-bottom: 4px solid #000000;
+     z-index: 1000;
+}
+
+.nav-bar{
+    display: flex;
+    justify-content: space-between;
+    background: transparent;
+    z-index: 1;
+}
+
+.logo-content{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    text-decoration: none;
+}
+
+.logo-image{
+    width: 90px;
+    height: 90px;
+}
+
+.logo-text{
+    color: #ffffff;
+}
+
+.navlist{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    list-style: none;
+    letter-spacing: 1px;
+}
+
+.item{
+    text-decoration: none;
+    color: #ffffff;
+    border-radius: 50px;
+    padding: 10px 20px;
+    font-weight: 600;
+}
+
+.item:hover{
+    color: #000000;
+    background-color: #ffffff;
+}
+
+section{
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+.home-section{
+    /* margin: 30px; */
+    min-height: 100vh;
+    min-width: 100%;
+    background-image: linear-gradient(rgba(0,0,40,0.65), rgba(0,0,40,0.65)), url("assets/pexels-mart-production-8872622.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 50px;
+    color: #ffffff;
+}
+
+.home-writings{
+    line-height: 1.5;
+    /* padding: 20px; */
+    text-align: center;
+}
+
+.home-title{
+    letter-spacing: 1px;
+}
+
+.home-title::after{
+    content: "";
+    display: block;
+    width: 130px;
+    height: 4px;
+    background-color: rgb(0,0,150);
+    margin: 15px auto 0;
+}
+
+.home-text{
+    padding-top: 30px;
+}
+
+.home-buttons{
+    padding: 30px;
+    text-align: center;
+    display: flex;
+    gap: 40px;
+    margin: 15px auto 0;
+    font-weight: 600;
+}
+
+.about-home-button{
+    border-radius: 50px;
+    padding: 10px 20px;
+    color: #ffffff;
+    background-color: rgb(199, 22, 22);
+    text-decoration: none;
+}
+
+.about-home-button:hover{
+    color: rgb(199, 22, 22);
+    background-color: #000000;
+}
+
+.contact-home-button{
+    border-radius: 50px;
+    padding: 10px 20px;
+    color: #ffffff;
+    background-color: rgb(0,0,150);
+    text-decoration: none;
+}
+
+.contact-home-button:hover{
+    color: rgb(0,0,150);
+    background-color: #ffffff;
+}
+
+/* ABOUT SECTION */
+.about-section{
+    padding: 90px 20px;
+    background-color: #ffffff;
+}
+
+.about-writings{
+    text-align: center;
+}
+
+.about-title{
+letter-spacing: 1px;
+}
+
+.about-title::after{
+    content: "";
+    display: block;
+    width: 130px;
+    height: 4px;
+    background-color: rgb(0,0,150);
+    margin: 15px auto 0;
+}
+
+.about-subtitle{
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
+.about-text{
+    line-height: 1.5;
+    text-align: left;
+    padding: 10px 120px;
+    padding-bottom: 30px;
+}
+
+.cards{
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.card1{
+    box-shadow: 0 15px 25px gray;
+    width: 1100px;
+    min-height: 300px;
+    margin: 0 auto;
+    border-radius: 20px;
+    border-bottom: 3px solid rgb(0,0,150);
+}
+
+.card1-image{
+    height: 300px;
+    width: 100%;
+    padding: 30px;
+    object-fit: cover;
+    object-position: center;
+    overflow: hidden;
+}
+
+.card1-image img{
+    width: 100%;
+    height: 90%;
+}
+
+.card1-text{
+    padding: 20px;
+}
+
+.card1-paragraph{
+    opacity: 0.7;
+}
+
+.card2{
+     box-shadow: 0 15px 25px gray;
+    width: 1100px;
+    min-height: 300px;
+    margin: 0 auto;
+    border-radius: 20px;
+    border-bottom: 3px solid rgb(199, 22, 22);
+
+}
+
+.card2-image{
+    height: 300px;
+    width: 100%;
+    padding: 30px;
+    object-fit: cover;
+    object-position: center;
+    overflow: hidden;
+}
+
+.card2-image img{
+    width: 100%;
+    height: 90%;
+}
+
+.card2-text{
+    padding: 20px;
+}
+
+.card2-paragraph{
+    opacity: 0.7;
+}
+
+
+/* TIN REGISTRATION SECTION */
+
+.tin-section {
+    padding: 80px 50px;
+    background-color: #f4f7fc;
+    min-height: 100vh;
+}
+
+.tin-title {
+    color: rgb(0,0,150);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.tin-title::after{
+    content: "";
+    display: block;
+    width: 130px;
+    height: 4px;
+    background-color: rgb(199, 22, 22);
+    margin: 15px auto 0;
+}
+
+.tin-intro {
+    line-height: 1.6;
+    text-align: center;
+    max-width: 850px;
+    margin: 0 auto 40px;
+}
+
+/* FLOATED IMAGE */
+
+.tin-information {
+    max-width: 1000px;
+    margin: 30px auto;
+}
+
+.tin-description {
+    line-height: 1.8;
+    text-align: justify;
+    overflow: auto;
+}
+
+.tin-float-image {
+    float: left;
+    width: 250px;
+    height: 180px;
+    object-fit: cover;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+/* INFOGRAPHIC FIGURE */
+
+.tin-figure {
+    text-align: center;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.tin-figure img {
+    object-fit: contain;
+}
+
+.tin-figure figcaption {
+    color: #444444;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+/* REGISTRATION STEPS */
+
+.tin-steps {
+    max-width: 850px;
+    margin: 40px auto;
+    line-height: 1.6;
+}
+
+.tin-steps h3 {
+    color: rgb(199, 22, 22);
+    margin-bottom: 20px;
+}
+
+.tin-steps ol {
+    padding-left: 30px;
+}
+
+.tin-steps li {
+    margin-bottom: 20px;
+}
+
+.tin-steps h4 {
+    color: rgb(0,0,150);
+    margin-bottom: 5px;
+}
+
+/* REGISTER BUTTON */
+
+.tin-button {
+    text-align: center;
+    margin-top: 35px;
+}
+
+.register-button {
+    display: inline-block;
+    background-color: rgb(199, 22, 22);
+    color: white;
+    padding: 14px 30px;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.register-button:hover {
+    background-color: rgb(0,0,150);
+    color: #000000;
+}
+
+
+/* KEY DEADLINES SECTION */
+
+.deadlines-section {
+    background-color: rgb(0,0,0,0.4);
+    padding: 80px 50px;
+    text-align: center;
+}
+
+.deadlines-title {
+    color: rgb(0,0,150);
+    margin-bottom: 15px;
+}
+
+.deadlines-title::after{
+    content: "";
+    display: block;
+    width: 130px;
+    height: 4px;
+    background-color: rgb(199, 22, 22);
+    margin: 15px auto 0;
+}
+
+.deadlines-intro {
+    color: #333333;
+    line-height: 1.6;
+    max-width: 750px;
+    margin: 0 auto 35px;
+}
+
+/* TABLE STYLING */
+
+.table-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    overflow-x: auto;
+}
+
+.deadlines-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+.deadlines-table th {
+    background-color: #000096;
+    color: #ffffff;
+    padding: 18px;
+}
+
+.deadlines-table td {
+    color: #222222;
+    padding: 16px 18px;
+    border-bottom: 1px solid #cccccc;
+}
+
+.deadlines-table tr:nth-child(even) {
+    background-color: #f0f3fa;
+}
+
+.deadlines-table tr:hover {
+    background-color: #e1e8f7;
+}
+
+.deadline-note {
+    color: #444444;
+    font-size: 14px;
+    margin: 20px auto;
+    max-width: 900px;
+    line-height: 1.6;
+}
+
+.deadlines-button {
+    margin-top: 30px;
+}
+
